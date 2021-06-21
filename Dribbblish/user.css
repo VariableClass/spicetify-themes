@@ -1322,6 +1322,7 @@ button#player-button-repeat,
 #view-now-playing.expanded {
     bottom: calc(var(--bar-height) + var(--main-gap));
     left: var(--sidebar-width);
+    border-radius: var(--cover-border-radius);
 }
 
 #view-now-playing a.image.large figure,
@@ -1410,6 +1411,13 @@ button#player-button-repeat,
 .lyrics-lines-container .lyrics-list-animated .lyrics-line[data-animation-index="2"],
 .lyrics-lines-container .lyrics-list-animated .lyrics-line[data-animation-index="3"] {
     color: var(--modspotify_secondary_fg);
+}
+
+/* "Recommended Songs" header */
+#playlist-extender .playlist-extender-content header {
+    /* 52px will match the surrounding padding */
+    padding-left: 52px;
+    padding-right: 52px;
 }
 
 .SidebarListItemLink:before {
